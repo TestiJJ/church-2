@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gallery | CAC Oke Agbara</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body { font-family:'Poppins', sans-serif; background:#fff; }
+
+    .navbar-custom { background: linear-gradient(90deg,#000,#4B2E2E); }
+
+    .gallery-container { padding:60px 0; }
+    .gallery-item {
+      overflow:hidden;
+      cursor:pointer;
+      border-radius:10px;
+      margin-bottom:15px;
+    }
+    .gallery-item img {
+      width:100%;
+      height:200px;
+      object-fit:cover;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .gallery-item img:hover {
+      transform: scale(1.05);
+      box-shadow: 0 6px 15px rgba(0,0,0,0.3);
+    }
+
+    /* Lightbox */
+    .lightbox {
+      display:none;
+      position:fixed;
+      top:0; left:0;
+      width:100%; height:100%;
+      background:rgba(0,0,0,0.9);
+      justify-content:center;
+      align-items:center;
+      z-index:9999;
+    }
+    .lightbox img {
+      max-width:90%;
+      max-height:80%;
+      border-radius:10px;
+    }
+    .lightbox .close {
+      position:absolute;
+      top:20px;
+      right:30px;
+      font-size:2rem;
+      color:#fff;
+      cursor:pointer;
+    }
+    .lightbox .nav-btn {
+      position:absolute;
+      top:50%;
+      transform:translateY(-50%);
+      font-size:2rem;
+      color:#fff;
+      cursor:pointer;
+      padding:0 20px;
+      user-select:none;
+    }
+    .lightbox .prev { left:20px; }
+    .lightbox .next { right:20px; }
+  </style>
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg navbar-dark navbar-custom">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center" href="index.html">
+        <img src="img/cac logo.jpeg" alt="CAC Logo" width="50" class="me-2">
+        <div>
+          <div style="font-weight:bold;">CHRIST APOSTOLIC CHURCH</div>
+          <small>Mountain Of Power</small>
+        </div>
+      </a>
+      <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link active" href="gallery.html">Gallery</a></li>
+          <li class="nav-item"><a class="nav-link" href="Testimonies.html">Testimonies</a></li>
+          <li class="nav-item"><a class="nav-link" href="Events.html">Events</a></li>
+          <li class="nav-item"><a class="nav-link" href="Livestream.html">Livestream</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- GALLERY -->
+  <section class="gallery-container">
+    <div class="container">
+      <div class="text-center mb-5">
+        <h2 class="section-title">Photo Gallery</h2>
+        <hr style="width:80px; border:3px solid #C6A45F; margin:auto; margin-top:10px;">
+        <p>View the Church event and image.</p>
+      </div>
+      <div class="row g-3">
+        <div class="col-6 col-md-4 col-lg-3">
+          <div class="gallery-item">
+            <img src="img/cac church pic 2.jpeg" alt="Gallery 1">
+          </div>
+        </div>
+        <div class="col-6 col-md-4 col-lg-3">
+          <div class="gallery-item">
+            <img src="img/cac pic3 2.jpeg" alt="Gallery 2">
+          </div>
+        </div>
+        <div class="col-6 col-md-4 col-lg-3">
+          <div class="gallery-item">
+            <img src="img/cac church pic 3.jpeg" alt="Gallery 3">
+          </div>
+        </div>
+        <div class="col-6 col-md-4 col-lg-3">
+          <div class="gallery-item">
+            <img src="img/WhatsApp Image 2025-11-06 at 1.47.00 PM.jpeg" alt="Gallery 4">
+          </div>
+          
+          
+        </div>
+              </div>
+      <div class="row g-3">
+        <div class="col-6 col-md-4 col-lg-3">
+          <div class="gallery-item">
+            <img src="img/cac church pic 2.jpeg" alt="Gallery 1">
+          </div>
+        </div>
+        <div class="col-6 col-md-4 col-lg-3">
+          <div class="gallery-item">
+            <img src="img/cac pic3 2.jpeg" alt="Gallery 2">
+          </div>
+        </div>
+        <div class="col-6 col-md-4 col-lg-3">
+          <div class="gallery-item">
+            <img src="img/cac church pic 3.jpeg" alt="Gallery 3">
+          </div>
+        </div>
+        <div class="col-6 col-md-4 col-lg-3">
+          <div class="gallery-item">
+            <img src="img/WhatsApp Image 2025-11-06 at 1.47.00 PM.jpeg" alt="Gallery 4">
+          </div>
+          
+          
+        </div>
+              </div>
+      <div class="row g-3">
+        <div class="col-6 col-md-4 col-lg-3">
+          <div class="gallery-item">
+            <img src="img/cac church pic 2.jpeg" alt="Gallery 1">
+          </div>
+        </div>
+        <div class="col-6 col-md-4 col-lg-3">
+          <div class="gallery-item">
+            <img src="img/cac pic3 2.jpeg" alt="Gallery 2">
+          </div>
+        </div>
+        <div class="col-6 col-md-4 col-lg-3">
+          <div class="gallery-item">
+            <img src="img/cac church pic 3.jpeg" alt="Gallery 3">
+          </div>
+        </div>
+        <div class="col-6 col-md-4 col-lg-3">
+          <div class="gallery-item">
+            <img src="img/WhatsApp Image 2025-11-06 at 1.47.00 PM.jpeg" alt="Gallery 4">
+          </div>
+          
+          
+        </div>
+              </div>
+      <div class="row g-3">
+        <div class="col-6 col-md-4 col-lg-3">
+          <div class="gallery-item">
+            <img src="img/cac church pic 2.jpeg" alt="Gallery 1">
+          </div>
+        </div>
+        <div class="col-6 col-md-4 col-lg-3">
+          <div class="gallery-item">
+            <img src="img/cac pic3 2.jpeg" alt="Gallery 2">
+          </div>
+        </div>
+        <div class="col-6 col-md-4 col-lg-3">
+          <div class="gallery-item">
+            <img src="img/cac church pic 3.jpeg" alt="Gallery 3">
+          </div>
+        </div>
+        <div class="col-6 col-md-4 col-lg-3">
+          <div class="gallery-item">
+            <img src="img/WhatsApp Image 2025-11-06 at 1.47.00 PM.jpeg" alt="Gallery 4">
+          </div>
+          
+          
+        </div>
+              </div>
+      <div class="row g-3">
+        <div class="col-6 col-md-4 col-lg-3">
+          <div class="gallery-item">
+            <img src="img/cac church pic 2.jpeg" alt="Gallery 1">
+          </div>
+        </div>
+        <div class="col-6 col-md-4 col-lg-3">
+          <div class="gallery-item">
+            <img src="img/cac pic3 2.jpeg" alt="Gallery 2">
+          </div>
+        </div>
+        <div class="col-6 col-md-4 col-lg-3">
+          <div class="gallery-item">
+            <img src="img/cac church pic 3.jpeg" alt="Gallery 3">
+          </div>
+        </div>
+        <div class="col-6 col-md-4 col-lg-3">
+          <div class="gallery-item">
+            <img src="img/WhatsApp Image 2025-11-06 at 1.47.00 PM.jpeg" alt="Gallery 4">
+          </div>
+          
+          
+        </div>
+        <!-- Add more images as needed -->
+      </div>
+      <div class="text-center mt-4">
+        <a href="index.html#gallery" class="btn btn-warning">Back to Home</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- LIGHTBOX -->
+  <div class="lightbox" id="lightbox">
+    <span class="close" id="lightbox-close">&times;</span>
+    <span class="nav-btn prev" id="lightbox-prev">&#10094;</span>
+    <img src="" id="lightbox-img" alt="Full Image">
+    <span class="nav-btn next" id="lightbox-next">&#10095;</span>
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="py-5" style="background:#4B2E2E; color:#fff;">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4 mb-4">
+          <h5 class="fw-bold">Christ Apostolic Church</h5>
+          <p>Oke Agbara (Challenge District HQ)</p>
+          <p>“Covenant Keeping God” - Deut. 7:9</p>
+        </div>
+        <div class="col-md-4 mb-4">
+          <h5 class="fw-bold">Quick Links</h5>
+          <ul class="list-unstyled">
+            <li><a href="index.html#home">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="index.html#gallery">Gallery</a></li>
+            <li><a href="index.html#testimonies">Testimonies</a></li>
+            <li><a href="index.html#events">Events</a></li>
+            <li><a href="index.html#livestream">Livestream</a></li>
+          </ul>
+        </div>
+        <div class="col-md-4 mb-4">
+          <h5 class="fw-bold">Contact Us</h5>
+          <p>📞 +234 801 234 5678</p>
+          <p>📧 info@cacockeagbara.org</p>
+          <p>📍 Oke Agbara, Ibadan, Nigeria</p>
+        </div>
+      </div>
+      <hr style="border-top:1px solid rgba(255,255,255,0.3);">
+      <div class="text-center mt-3">
+        &copy; 2025 Christ Apostolic Church, Oke Agbara. All Rights Reserved.
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const galleryItems = document.querySelectorAll('.gallery-item img');
+    const lightbox = document.getElementById('lightbox');
+    const lightboxImg = document.getElementById('lightbox-img');
+    const closeBtn = document.getElementById('lightbox-close');
+    const prevBtn = document.getElementById('lightbox-prev');
+    const nextBtn = document.getElementById('lightbox-next');
+
+    let currentIndex = 0;
+    const images = Array.from(galleryItems).map(img => img.src);
+
+    galleryItems.forEach((img, index) => {
+      img.addEventListener('click', () => {
+        currentIndex = index;
+        lightboxImg.src = images[currentIndex];
+        lightbox.style.display = 'flex';
+      });
+    });
+
+    closeBtn.addEventListener('click', () => lightbox.style.display = 'none');
+    lightbox.addEventListener('click', e => { if(e.target === lightbox) lightbox.style.display='none'; });
+
+    prevBtn.addEventListener('click', e => {
+      e.stopPropagation();
+      currentIndex = (currentIndex - 1 + images.length) % images.length;
+      lightboxImg.src = images[currentIndex];
+    });
+
+    nextBtn.addEventListener('click', e => {
+      e.stopPropagation();
+      currentIndex = (currentIndex + 1) % images.length;
+      lightboxImg.src = images[currentIndex];
+    });
+  </script>
+</body>
+</html>

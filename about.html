@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About | Christ Apostolic Church Oke Agbara</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <!-- FontAwesome -->
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+  <style>
+    body { font-family:'Poppins', sans-serif; background:#fff; }
+
+    /* NAVBAR COLORS */
+    .navbar-custom { background: linear-gradient(90deg, #000000, #4B2E2E); }
+
+    /* Hero Banner */
+    .hero-banner {
+      background: url('church-banner.jpg') center center/cover no-repeat;
+      height: 350px;
+      display:flex; align-items:center; justify-content:center; color:#fff;
+      text-align:center; position:relative;
+    }
+    .hero-banner::after {
+      content:""; position:absolute; top:0; left:0; width:100%; height:100%;
+      background:rgba(0,0,0,0.4);
+    }
+    .hero-content { position:relative; z-index:2; }
+
+    /* Section titles */
+    h2.section-title {
+      font-weight:bold; font-size:2rem; color:#4B2E2E; margin-bottom:20px;
+    }
+    .divider { flex:1; height:3px; background:#C6A45F; display:inline-block; margin:0 10px; }
+
+    /* History Section */
+    #history { background:#fdf6f0; padding:60px 0; }
+    #history img { max-height:400px; object-fit:cover; border-radius:8px; }
+
+    /* Mission & Vision */
+    #mission { background:#f8f8f8; padding:60px 0; }
+
+    /* Leadership */
+    #leadership { padding:60px 0; }
+    #leadership .card-img-top { max-height:250px; object-fit:cover; }
+
+    /* Timeline / Milestones */
+    .timeline { position:relative; margin:60px 0; }
+    .timeline::before { content:''; position:absolute; left:50%; top:0; bottom:0; width:4px; background:#C6A45F; transform:translateX(-50%); }
+    .timeline-item { position:relative; width:50%; padding:20px 40px; }
+    .timeline-item-left { left:0; }
+    .timeline-item-right { left:50%; }
+    .timeline-item::after { content:''; position:absolute; width:15px; height:15px; background:#4B2E2E; border-radius:50%; top:20px; right:-8px; }
+    .timeline-item-right::after { left:-8px; right:auto; }
+    @media(max-width:768px){
+      .timeline::before{ left:20px; }
+      .timeline-item{ width:100%; padding-left:50px; padding-right:20px; }
+      .timeline-item-right{ left:0; }
+      .timeline-item::after{ left:12px; }
+    }
+
+  </style>
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg navbar-dark navbar-custom">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center" href="index.html">
+        <img src="img/cac logo.jpeg" alt="CAC Logo" width="50" class="me-2">
+        <div>
+          <div style="font-weight:bold;">CHRIST APOSTOLIC CHURCH</div>
+          <small>Mountain Of Power</small>
+        </div>
+      </a>
+      <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link active" href="#">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+          <li class="nav-item"><a class="nav-link" href="Testimonies.html">Testimonies</a></li>
+          <li class="nav-item"><a class="nav-link" href="Events.html">Events</a></li>
+          <li class="nav-item"><a class="nav-link" href="Livestream.html">Livestream</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO BANNER -->
+  <section class="hero-banner">
+    <div class="hero-content">
+      <h1 style="font-weight:bold;">About Christ Apostolic Church, Oke Agbara</h1>
+      <p>Celebrating 40 Years of Covenant Keeping God</p>
+    </div>
+  </section>
+
+  <!-- FULL CHURCH HISTORY -->
+  <section id="history">
+    <div class="container">
+      <div class="text-center mb-5">
+        <h2 class="section-title">BRIEF HISTORY OF CAC OKE AGBARA</h2>
+        <hr style="width:80px; border:3px solid #C6A45F; margin:auto; margin-top:10px;">
+      </div>
+      <div class="row g-4 align-items-start">
+        <div class="col-md-4 text-center">
+          <img src="img/cac church pic 2.jpeg" alt="Church History" class="img-fluid shadow">
+        </div>
+        <div class="col-md-8">
+          <p><strong>CAC OKE AGBARA</strong> started in 1985. Over 40 years ago, the Lord showed His servant Prophet D.F. Babatunde a revelation…</p>
+          <p>The beginning was not glamorous — the church started <em>inside a Palm-leaf tent</em>. No chairs, no instruments, but FAITH, FIRE, and PURPOSE.</p>
+          <p>God planted this Church through Prophet D.F. Babatunde. Challenges came, but God preserved His work.</p>
+          <p>After <strong>20 years</strong>, Prophet D.F. Babatunde was promoted District Superintendent. Another 20 years later, his son also became District Superintendent, showing God’s faithfulness.</p>
+          <p>In 2008, the Lord gave the church a mountain (Ori Oke Adura). Today, the church is <strong>40 YEARS</strong>, entering a new season of expansion and manifestation.</p>
+          <p>Glory be to God — the <strong>COVENANT KEEPING GOD</strong>.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- MISSION & VISION -->
+  <section id="mission">
+    <div class="container">
+      <div class="text-center mb-5">
+        <h2 class="section-title">Mission & Vision</h2>
+        <hr style="width:80px; border:3px solid #C6A45F; margin:auto; margin-top:10px;">
+      </div>
+      <div class="row g-4">
+        <div class="col-md-6">
+          <h5 class="fw-bold">Mission</h5>
+          <p>To glorify God, spread the gospel, and nurture members into mature believers with faith and purpose.</p>
+        </div>
+        <div class="col-md-6">
+          <h5 class="fw-bold">Vision</h5>
+          <p>To be a mountain of power impacting communities, transforming lives, and expanding God’s kingdom through covenant faithfulness.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- LEADERSHIP -->
+  <section id="leadership">
+    <div class="container">
+      <div class="text-center mb-5">
+        <h2 class="section-title">Leadership</h2>
+        <hr style="width:80px; border:3px solid #C6A45F; margin:auto; margin-top:10px;">
+      </div>
+      <div class="row g-4 justify-content-center">
+        <div class="col-12 col-md-4">
+          <div class="card h-100 shadow rounded">
+            <img src="pastor.jpg" class="card-img-top" alt="Pastor">
+            <div class="card-body text-center">
+              <h5 class="card-title fw-bold">Prophet D.F. Babatunde</h5>
+              <p class="card-text">Founder & District Superintendent</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TIMELINE / MILESTONES -->
+  <section id="timeline" class="py-5" style="background:#f8f8f8;">
+    <div class="container">
+      <div class="text-center mb-5">
+        <h2 class="section-title">Milestones</h2>
+        <hr style="width:80px; border:3px solid #C6A45F; margin:auto; margin-top:10px;">
+      </div>
+      <div class="timeline">
+        <div class="timeline-item timeline-item-left">
+          <h6>1985 - Church Founded</h6>
+          <p>Started inside a palm-leaf tent, humble beginnings with FAITH and PURPOSE.</p>
+        </div>
+        <div class="timeline-item timeline-item-right">
+          <h6>2005 - 20 Years Anniversary</h6>
+          <p>Prophet D.F. Babatunde appointed District Superintendent.</p>
+        </div>
+        <div class="timeline-item timeline-item-left">
+          <h6>2025 - 40 Years Anniversary</h6>
+          <p>Entering a new season of settlement, expansion, and manifestation.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="py-5" style="background:#4B2E2E; color:#fff;">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-md-4 mb-4">
+          <h5 class="fw-bold">Christ Apostolic Church</h5>
+          <p>Oke Agbara (Challenge District HQ)</p>
+          <p>“Covenant Keeping God” - Deut. 7:9</p>
+        </div>
+        <div class="col-12 col-md-4 mb-4">
+          <h5 class="fw-bold">Quick Links</h5>
+          <ul class="list-unstyled">
+            <li><a href="index.html#home" style="color:#fff; text-decoration:none;">Home</a></li>
+            <li><a href="about.html" style="color:#fff; text-decoration:none;">About</a></li>
+            <li><a href="index.html#gallery" style="color:#fff; text-decoration:none;">Gallery</a></li>
+            <li><a href="index.html#testimonies" style="color:#fff; text-decoration:none;">Testimonies</a></li>
+            <li><a href="index.html#events" style="color:#fff; text-decoration:none;">Events</a></li>
+            <li><a href="index.html#livestream" style="color:#fff; text-decoration:none;">Livestream</a></li>
+          </ul>
+        </div>
+        <div class="col-12 col-md-4 mb-4">
+          <h5 class="fw-bold">Contact Us</h5>
+          <p>📞 +234 801 234 5678</p>
+          <p>📧 info@cacockeagbara.org</p>
+          <p>📍 Oke Agbara, Ibadan, Nigeria</p>
+          <div class="d-flex mt-2">
+            <a href="https://facebook.com" target="_blank" class="me-3" style="color:#fff; font-size:1.2rem;"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://instagram.com" target="_blank" class="me-3" style="color:#fff; font-size:1.2rem;"><i class="fab fa-instagram"></i></a>
+            <a href="https://youtube.com" target="_blank" class="me-3" style="color:#fff; font-size:1.2rem;"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+      </div>
+      <hr style="border-top:1px solid rgba(255,255,255,0.3);">
+      <div class="text-center mt-3">
+        &copy; 2025 Christ Apostolic Church, Oke Agbara. All Rights Reserved.
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
