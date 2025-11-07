@@ -499,32 +499,38 @@ document.getElementById('show-more').addEventListener('click', function() {
   box-shadow: 0 12px 20px rgba(0,0,0,0.2);
 }
 </style>
-
 <!-- PRAYER REQUEST SECTION -->
 <section id="prayer-request" class="py-5" style="background:#fdfdfd; margin-top:40px;">
   <div class="container">
     <h2 class="text-center mb-4" style="font-weight:bold; font-size:1.8rem; color:#4B2E2E;">
       Prayer Request
     </h2>
-    
+
     <p class="text-center mb-4" style="font-style:italic;">
       Share your prayer request with us and our church family will lift you in prayer.
     </p>
-    
+
     <div class="row justify-content-center">
       <div class="col-12 col-md-8">
-        <form>
+        <form action="https://formsubmit.co/babatundeobaloluwa@gmail.com" method="POST">
+          <!-- Hidden redirect page -->
+          <input type="hidden" name="_next" value="thank-you.html">
+          <input type="hidden" name="_captcha" value="false">
+
           <div class="mb-3">
-            <input type="text" class="form-control" placeholder="Your Name">
+            <input type="text" name="name" class="form-control" placeholder="Your Name" required>
           </div>
           <div class="mb-3">
-            <input type="email" class="form-control" placeholder="Your Email">
+            <input type="email" name="email" class="form-control" placeholder="Your Email" required>
           </div>
           <div class="mb-3">
-            <textarea class="form-control" rows="4" placeholder="Your Prayer Request"></textarea>
+            <input type="text" name="contact" class="form-control" placeholder="Your WhatsApp or Phone Number">
+          </div>
+          <div class="mb-3">
+            <textarea name="message" class="form-control" rows="4" placeholder="Your Prayer Request" required></textarea>
           </div>
           <div class="text-center">
-            <button type="submit" class="btn btn-warning">Submit</button>
+            <button type="submit" class="btn btn-warning px-4 py-2">Send Request</button>
           </div>
         </form>
       </div>
@@ -561,8 +567,8 @@ document.getElementById('show-more').addEventListener('click', function() {
       <div class="col-12 col-md-4 mb-4">
         <h5 class="font-weight-bold">Contact Us</h5>
         <p>📞 +234 801 234 5678</p>
-        <p>📧 info@cacockeagbara.org</p>
-        <p>📍 Oke Agbara, Ibadan, Nigeria</p>
+        <p>📧 babatundeobaloluwa@gmail.com</p>
+        <p>📍 CAC Oke Agbara Challenge District, No. 3 Akinbola Street, Behind Ayefele Music House, Ibadan, Oyo State, Nigeria.</p>
         <div class="d-flex mt-2">
           <a href="https://facebook.com" target="_blank" class="me-3" style="color:#fff; font-size:1.2rem;">
             <i class="fab fa-facebook-f"></i>
